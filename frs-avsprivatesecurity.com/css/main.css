@@ -703,3 +703,27 @@ a .list-group-item {
   text-decoration: none;
   color: rgba(0,0,0,0.5);
 }
+
+/*Certifications CSS*/
+#certifications li {
+  color: rgba(0,0,0,0.7);
+}
+
+#certifications li:hover {
+  color: #BF0A30;
+}
+#certifications a:hover {
+  text-decoration: none !important;
+}
+#certifications h2 {
+  text-align: center;
+}
+.certifications {
+  text-align: center;
+  min-height: 500px !important;
+  height: 100% !important;
+}
+
+.certifications h3 {
+  margin-bottom: .5em;
+}
