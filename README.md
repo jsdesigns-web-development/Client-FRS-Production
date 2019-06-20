@@ -1,1 +1,4 @@
-# client-frs-prod
+- frs-avsprivatesecurity.com = client
+- frs-hairstylesbygina.com = friends & family
+- frs-mamapurnis.catering = client
+- frs-mccoeyinsurance.com = client
