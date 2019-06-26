@@ -727,3 +727,12 @@ a .list-group-item {
 .certifications h3 {
   margin-bottom: .5em;
 }
+
+.certs {
+  padding-left: .5em !important;
+}
+
+/* Areas Served CSS */
+.areas {
+  padding-left: .5em !important;
+}
