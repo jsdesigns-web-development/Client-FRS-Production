@@ -753,3 +753,19 @@ a .list-group-item {
 .areas {
   padding-left: .5em !important;
 }
+
+
+/* FOUNDER CSS */
+
+#founder {
+  text-align: center;
+}
+
+#founder .col-md-4 {
+  width: 75% !important;
+}
+
+#founder img {
+  width: 100%;
+  height: auto;
+}
