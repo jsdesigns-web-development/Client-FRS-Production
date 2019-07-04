@@ -144,6 +144,41 @@ li.media {
   width: 100%;
   padding: 2em;
 }
+#aboutuscontent {
+  margin-top: 4em !important;
+}
+#aboutuscontent .col-md-6 {
+  padding-top: 5% !important;
+}
+#aboutuscontent h3 {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+#aboutuscontent ul li {
+  list-style: none;
+}
+#aboutuscontent .col-md-3 {
+  text-align: center;
+}
+/* #aboutuscontent span:nth-child(2) {
+  background-color: #0077B5 !important;
+  color: white !important;
+  font-size: 1.5em !important;
+  padding: .05em .15em !important;
+  border-radius: 5px !important;
+} */
+#aboutuscontent h6 a {
+  background-color: #0077B5 !important;
+  color: white !important;
+  font-size: 1.5em !important;
+  padding: .05em .2em !important;
+}
+#aboutuscontent span:nth-child(1) {
+  color: tomato;
+}
+#aboutuscontent h6 {
+  font-weight: bold;
+}
 
 div.col-md-12 {
   margin: 1.5em 0;
@@ -291,21 +326,6 @@ span.contact-icons {
   text-decoration: none;
 }
 
-.fab.fa-linkedin {
-  color: white;
-  transition: .5s;
-  background-color: #0077B5;
-  height: 35px;
-  width: 35px;
-  text-align: center;
-  vertical-align: center;
-  border-radius: .15em;
-  padding-top: .12em;
-}
-
-.fab.fa-linkedin:hover {
-  transform: scale(1.5);
-}
 /* contact us Section */
 #contact {
   margin: 2em 0;
