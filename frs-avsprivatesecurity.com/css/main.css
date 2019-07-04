@@ -782,10 +782,19 @@ a .list-group-item {
 }
 
 #founder .col-md-4 {
-  width: 75% !important;
+  width: 100% !important;
 }
 
 #founder img {
-  width: 100%;
+  width: 70%;
   height: auto;
+}
+.aboutmike ul li {
+  color: gray !important;
+  border: none;
+}
+.aboutmike {
+  margin-top: .5em !important;
+  margin-bottom: 2em !important;
+  padding: .5em 0 .5em 0 !important;
 }
