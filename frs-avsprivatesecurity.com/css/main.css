@@ -462,7 +462,8 @@ span.contact-icons {
 }
 
 #copy {
-  height: 265px;
+  min-height: 265px;
+  height: auto;
   width: 100%;
   background-image: url("../imgs/army.jpg");
   background-position: center;
@@ -497,13 +498,11 @@ span.contact-icons {
 #jsd {
   width: 100%;
   font-weight: bold;
-  margin-top: 0.0em;
-  padding-right: 5em;
-  margin-bottom: 0.0em;
   font-size: 10px;
   color: #D3461C;
-  text-align: right;
-  background-color: rgba(0,0,0,0.9);
+  text-align: center;
+  /* background-color: rgba(0,0,0,0.9); */
+  padding: 1em 0;
 }
 
 #jsd a {
