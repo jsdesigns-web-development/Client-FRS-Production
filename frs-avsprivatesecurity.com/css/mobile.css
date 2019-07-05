@@ -162,3 +162,10 @@
     margin-left: -1.2em;
   }
 }
+
+@media (max-width: 767px) {
+  #our-founder-h3 {
+    text-align: left;
+    padding-top: 1em;
+  }
+}
