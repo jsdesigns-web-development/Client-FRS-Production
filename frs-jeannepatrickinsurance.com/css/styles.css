@@ -42,9 +42,16 @@ PRIMARY BLUE = #1a2b6a
   --medicare-title: #2BC1D3;
   --medicare-card-bg: var(--info);
   /* #17a2b8; bootstrap info color*/
-  --primary-blue: #1a2b6a;
-  --blue2: #3650a5;
+  /* --primary-blue: #1a2b6a; */
+
+  /* navy */
+  --blue2: #000080;
+
+   /* midnightblue */
+  /* --blue2: #191970; */
+
   --bs-blue: var(--blue);
+  --testimonial-blue: #3650a5;
 }
 
 :root {
@@ -112,8 +119,15 @@ a:hover, a:active {
 .text-theme-color {
   color: var(--primary-color); }
 
+.text-theme-color-testimonials {
+  /* color: rgba(0, 0, 128, .5); */
+  color: var(--testimonial-blue);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+  /* #fdf5e6 */
+}
+
 .shadow-primary {
-  -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); }
 
 .line-through {
@@ -737,7 +751,7 @@ a.butn.white:hover, a.butn.white:active {
   .testmonial-single h6 {
     font-weight: 500; }
   .testmonial-single span i, .testmonial-single .rating {
-    color: var(--primary-color); }
+    color: var(--testimonial-blue); }
 
 .owl-carousel .testmonial-box img {
   width: auto;
@@ -770,8 +784,8 @@ a.butn.white:hover, a.butn.white:active {
   .custom-dot.active span {
     width: 12px;
     height: 12px;
-    background: var(--primary-color);
-    border-color: var(--primary-color);
+    background: var(--testimonial-blue);
+    border-color: var(--testimonial-blue);
     -webkit-transition-duration: .3s;
     transition-duration: .3s; }
 

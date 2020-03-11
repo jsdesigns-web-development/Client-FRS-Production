@@ -38,7 +38,12 @@
 
   <!-- core style css -->
   <link href="css/styles.css" rel="stylesheet" />
-
+  <style>
+    .medicare-list-items {
+      font-size: 12pt;
+      font-weight: 550;
+    }
+  </style>
 </head>
 
 <body>
@@ -150,7 +155,7 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h2 class="text-left" style="color: var(--primary);">Medicare choices</h2>
+            <h2 class="text-left" style="color: var(--primary-color);">Medicare choices</h2>
             <p class="text-left">After you enroll in Original Medicare <span class="font-weight-bold">(Parts A and B),</span> there are two ways to get additional coverage.</p>
             <h2 style="" class="mr-2 mt-5"><span class="badge badge-pill badge-primary">Step 1</span></h2><span class="h3"> Enroll in Original Medicare.</span>
           </div>
@@ -226,19 +231,156 @@
 
         <div class="row text-center mt-5 mb-1">
           <div class="col-lg-5 large-or">
-            <h2 class="" style="color: var(--primary);">OPTION 1</h2>
+            <h2 class="" style="color: var(--primary-color);">OPTION 1</h2>
           </div>
           <div class="col-lg-2 large-or">
-            <h2 class="" style="color: var(--primary);">OR</h2>
+            <h2 class="" style="color: var(--primary-color);">OR</h2>
           </div>
           <div class="col-lg-5 large-or">
-            <h2 class="" style="color: var(--primary);">OPTION 2</h2>
+            <h2 class="" style="color: var(--primary-color);">OPTION 2</h2>
           </div>
         </div>
 
         <div class="row text-center mt-3">
+
           <div class="col-lg-6">
-            <h2 class="small-or" style="color: var(--primary);">OPTION 1</h2>
+            <h2 style="color: var(--primary-color);" class="sm-top-padding small-or"> OPTION 1</h2>
+            <br>
+            <div class="card shadow-lg">
+              <div class="card-header bg-primary text-light">
+                <span class="h3 font-weight-bold"> Medicare Advantage Plan</span> <br><br>
+              </div>
+              <div class="card-body">
+                <p class="text-left"><span class="h5">Which Combines:</span></p>
+                <ul class="list-group">
+                  <li class="list-group-item text-left">
+                    <div class="row">
+                      <div class="col-6">
+                        <span class="h3 font-weight-bold">Part <span class="h1 font-weight-bold">A </span><i class="fas fa-bed h2"></i></span>
+                      </div>
+                      <div class="col-6 pt-3">
+                        <ul class="medicare-list-items">
+                          <li>- Hospitalization</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item text-left">
+                    <div class="row">
+                      <div class="col-6">
+                        <span class="h3 font-weight-bold">Part <span class="h1 font-weight-bold">B </span><i class="fas fa-stethoscope h2"></i> </span> <span class="h3"> </span>
+                      </div>
+                      <div class="col-6">
+                        <ul class="medicare-list-items">
+                          <li>
+                            - Doctor Visits
+                          </li>
+                          <li>
+                            - Outpatient Facilities
+                          </li>
+                          <li>
+                            - Durable Medical Equipment<span><br>(walkers, wheelchairs, etc); plus additional benefits</span>
+                          </li>
+                        </ul>
+
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item text-left">
+                    <div class="row">
+                      <div class="col-6">
+                        <span class="h2 font-weight-bold">Part <span class="h1 font-weight-bold">C </span><i class="fas fa-notes-medical"></i></span>
+                      </div>
+                      <div class="col-6">
+                        <ul class="medicare-list-items">
+                          <li>
+                            - Medicare Advantage Plans
+                          </li>
+                          <li>
+                            - Combines part A + part B with additional benefits
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- <span class="h1 font-weight-bold"><i class="fas fa-user-md"></i></span> &nbsp; <span class="h5">Plus additional benefits</span> -->
+                  </li>
+                  <li class="list-group-item text-left">
+                    <div class="row">
+                      <div class="col-6">
+                        <span class="h2 font-weight-bold">Part <span class="h1 font-weight-bold">D </span><i class="fas fa-prescription-bottle-alt"></i></span>
+                      </div>
+                      <div class="col-6">
+                        <ul class="medicare-list-items">
+                          <li>
+                            - Prescription Drug Plan
+                          </li>
+                          <li>
+                            - Often, but not always included in your medicare advantage plans
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--end of OPTION 1-->
+
+          <div class="col-sm-2 small-or mt-5 mb-3" style="margin: 0 auto; padding-top: 1.5em;">
+            <h1 class="text-center badge badge-secondary"> <span class="" style="font-size: 3em;">&nbsp;OR&nbsp;</span> </h1>
+          </div>
+
+          <div class="col-lg-6">
+            <h2 class="small-or" style="color: var(--primary-color);">OPTION 2</h2>
+
+            <div class="card text-left mt-3 shadow-lg text-center">
+              <div class="card-header bg-primary text-light">
+                <span class="h3 ml-2 "><strong class="font-weight-bold">Medicare Part A Plan</strong><br> &nbsp;
+              </div>
+              <div class="card-body text-left">
+                <div class="row">
+                  <div class="col-5">
+                    <span class="h3 font-weight-bold">Part <span class="h1 font-weight-bold">A </span><i class="fas fa-bed h2"></i> </span>
+                  </div>
+                  <div class="col-7 pt-3">
+                    <ul class="medicare-list-items">
+                      <li>- Hospitalization</li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="card text-left mt-3 shadow-lg text-center">
+              <div class="card-header bg-primary text-light">
+                <span class="h3 ml-2 "><strong class="font-weight-bold">Medicare Part B Plan</strong><br> &nbsp;
+              </div>
+              <div class="card-body text-left">
+                <div class="row">
+                  <div class="col-5">
+                    <span class="h3 font-weight-bold">Part <span class="h1 font-weight-bold">B </span><i class="fas fa-stethoscope h2"></i> </span> <span class="h3"> </span>
+                  </div>
+                  <div class="col-7">
+                    <ul class="medicare-list-items">
+                      <li>
+                        - Doctor Visits
+                      </li>
+                      <li>
+                        - Outpatient Facilities
+                      </li>
+                      <li>
+                        - Durable Medical Equipment<span> (walkers, wheelchairs, etc); plus additional benefits</span>
+                      </li>
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div class="card text-left shadow-lg text-center mt-4">
               <div class="card-header bg-primary text-light">
@@ -250,7 +392,7 @@
                     <i class="fas fa-briefcase-medical h1 text-primary"></i>
                   </div>
                   <div class="col-10 text-left">
-                    <span class="h5">Helps pay some (or all) of the out-of-pocket costs that come with original Medicare (depending on which plan you choose)</span>
+                    <span class="medicare-list-items">Helps pay some (or all) of the out-of-pocket costs that come with original Medicare (depending on which plan you choose)</span>
                   </div>
                 </div>
               </div>
@@ -261,40 +403,14 @@
                 <span class="h5 ml-2 "><strong class="font-weight-bold">Medicare Part D Plan</strong><br> Offered by private companies
               </div>
               <div class="card-body text-left">
-                <span class="h3 font-weight-bold">Part <br>
-                  <span class="h1 font-weight-bold">D </span><i class="fas fa-prescription-bottle-alt h2"></i> </span> <span class="h3"> Helps pay for prescription drugs</span>
-              </div>
-            </div>
-          </div>
-          <!--end of OPTION 1-->
-
-          <div class="col-sm-2 small-or mt-5 mb-3" style="margin: 0 auto; padding-top: 1.5em;">
-            <h1 class="text-center badge badge-secondary"> <span class="" style="font-size: 3em;">&nbsp;OR&nbsp;</span> </h1>
-          </div>
-
-          <div class="col-lg-6">
-            <h2 style="color: var(--primary);" class="sm-top-padding small-or"> OPTION 2</h2>
-            <br>
-            <div class="card shadow-lg">
-              <div class="card-header bg-primary text-light">
-                <span class="h3 font-weight-bold"> Medicare Advantage Plan</span> <br><br>
-              </div>
-              <div class="card-body">
-                <p class="text-left"><span class="h5">Which Combines:</span></p>
-                <ul class="list-group">
-                  <li class="list-group-item text-left">
-                    <span class="h3 font-weight-bold">Part <span class="h1 font-weight-bold">A </span><i class="fas fa-bed"></i> </span><span class="h3 font-weight-bold"> &nbsp;&nbsp; + &nbsp;&nbsp; </span>
-                    <span class="h3 font-weight-bold">Part <span class="h1 font-weight-bold">B </span><i class="fas fa-stethoscope"></i></span>
-                  </li>
-                  <li class="list-group-item text-left">
-                    <span class="h1 font-weight-bold"><i class="fas fa-user-md"></i></span> &nbsp; <span class="h5">Plus additional benefits</span>
-                  </li>
-                  <li class="list-group-item text-left">
-
-                    <span class="h5">Usually includes</span> &nbsp; <span class="h3 font-weight-bold">Part <span class="h1 font-weight-bold">D </span><i class="fas fa-notes-medical"></i></span>
-                  </li>
-
-                </ul>
+                <div class="row">
+                  <div class="col-5">
+                    <span class="h2 font-weight-bold">Part <span class="h1 font-weight-bold">D </span><i class="fas fa-prescription-bottle-alt h2"></i> </span>
+                  </div>
+                  <div class="col-7 pt-3">
+                    <span class="medicare-list-items">Helps pay for prescription drugs</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -307,9 +423,9 @@
         <div class="row mt-5">
           <div class="col">
             <div class="mb-5">
-              <h2 class="text-center" style="color: var(--primary);">Things to Consider Before You Enroll</h2>
+              <h2 class="text-center" style="color: var(--primary-color);">Things to Consider Before You Enroll</h2>
             </div>
-            <h5 class="text-left" style="color: var(--primary);">What is your current Medicare status and eligibility?</h5>
+            <h5 class="text-left" style="color: var(--primary-color);">What is your current Medicare status and eligibility?</h5>
             <p class="text-left lead ">Your current life situation, such as your age and employment status, will affect your
               Medicare needs and choices. Find which of the descriptions below best fits you:
             </p>
@@ -424,7 +540,7 @@
           <div class="col">
             <ul class="list-group  medicare-list ">
               <li class=" ">
-                <span class="display-4" style="color: var(--primary);">1 </span>
+                <span class="display-4" style="color: var(--primary-color);">1 </span>
                 <span class="h4">Currently enrolled in Medicare </span>
                 <div class="ml-5 mt-1">
                   &bull; Make sure to review your coverage and budget needs at least once every year.
@@ -435,7 +551,7 @@
               </li>
               <hr>
               <li class=" ">
-                <span class="display-4" style="color: var(--primary);">2 </span>
+                <span class="display-4" style="color: var(--primary-color);">2 </span>
                 <span class="h4">Eligible for Medicare and working </span>
                 <div class="ml-5 mt-1">
                   &bull;&nbsp;If you have employer—provided health insurance, consult with your benefits
@@ -447,7 +563,7 @@
               </li>
               <hr>
               <li class=" ">
-                <span class="display-4" style="color: var(--primary);">3 </span>
+                <span class="display-4" style="color: var(--primary-color);">3 </span>
                 <span class="h4">Eligible for Medicare and not working </span>
                 <div class="ml-5 mt-1">
                   <br>
@@ -462,7 +578,7 @@
               </li>
               <hr>
               <li class=" ">
-                <span class="display-4" style="color: var(--primary);">4 </span>
+                <span class="display-4" style="color: var(--primary-color);">4 </span>
                 <span class="h4">Eligible for Medicare and retiring soon or losing coverage </span>
                 <div class="ml-5 mt-1">
                   &bull; If you will have retiree benefits through your employer, talk to your benefits
@@ -478,7 +594,7 @@
               </li>
               <hr>
               <li class=" ">
-                <span class="display-4" style="color: var(--primary);">5 </span>
+                <span class="display-4" style="color: var(--primary-color);">5 </span>
                 <span class="h4">Not eligible for Medicare and retiring soon or losing coverage </span>
                 <div class="ml-5 mt-1">
                   &bull; Explore COBRA. Under COBRA, workers at companies with 20 or more employees
@@ -495,7 +611,7 @@
         <div class="row text-center mt-5">
           <div class="col">
 
-            <span class="h2 text-left font-weight-bold" style="color: var(--primary);">
+            <span class="h2 text-left font-weight-bold" style="color: var(--primary-color);">
               10 important things to know about Medicare Advantage
             </span>
           </div>
@@ -505,7 +621,7 @@
           <div class="col">
             <ul class="list-group medicare-list">
               <li class=" ">
-                <span class="display-4" style="color: var(--primary);">1 </span>
+                <span class="display-4" style="color: var(--primary-color);">1 </span>
                 <span class="h4">You must continue to pay your Medicare Part B premium. </span>
                 <div class="ml-5 mt-1">
                   Medicare then gives your premium to your UnitedHealthcare Medicare
@@ -514,7 +630,7 @@
               </li>
               <hr>
               <li class=" ">
-                <span class="display-4" style="color: var(--primary);">2 </span>
+                <span class="display-4" style="color: var(--primary-color);">2 </span>
                 <span class="h4">Joining a Medicare Advantage plan may affect your current coverage. </span>
                 <div class="ml-5 mt-1">
                   If you have existing coverage or employer—provided health insurance and plan
@@ -524,7 +640,7 @@
               </li>
               <hr>
               <li class=" ">
-                <span class="display-4" style="color: var(--primary);">3 </span>
+                <span class="display-4" style="color: var(--primary-color);">3 </span>
                 <span class="h4">It’s best to use network providers. </span>
                 <div class="ml-5 mt-1">
                   Use of network health care and pharmacy providers is typically required.
@@ -534,7 +650,7 @@
               </li>
               <hr>
               <li class=" ">
-                <span class="display-4" style="color: var(--primary);">4 </span>
+                <span class="display-4" style="color: var(--primary-color);">4 </span>
                 <span class="h4">You may qualify for financial assistance.</span>
                 <div class="ml-5 mt-1">
                   Depending on your financial situation, you may qualify for help paying your
@@ -544,7 +660,7 @@
               </li>
               <hr>
               <li class=" ">
-                <span class="display-4" style="color: var(--primary);">5 </span>
+                <span class="display-4" style="color: var(--primary-color);">5 </span>
                 <span class="h4">If you enroll in Part D late, you may pay a penalty. </span>
                 <div class="ml-5 mt-1">
                   This is an additional amount charged by Medicare that will be added to your
@@ -555,7 +671,7 @@
               </li>
               <hr>
               <li class=" ">
-                <span class="display-4" style="color: var(--primary);">6 </span>
+                <span class="display-4" style="color: var(--primary-color);">6 </span>
                 <span class="h4">A Medicare supplement insurance plan (Medigap policy) is not a Medicare Advantage plan.</span>
                 <div class="ml-5 mt-1">
                   Medicare suppiement plans are health insurance policies and are secondary
@@ -565,7 +681,7 @@
               </li>
               <hr>
               <li class=" ">
-                <span class="display-4" style="color: var(--primary);">7 </span>
+                <span class="display-4" style="color: var(--primary-color);">7 </span>
                 <span class="h4">Keep your member ID card handy.</span>
                 <div class="ml-5 mt-1">
                   Members must present their UnitedHealthcare member ID card, not their
@@ -574,7 +690,7 @@
               </li>
               <hr>
               <li class=" ">
-                <span class="display-4" style="color: var(--primary);">8 </span>
+                <span class="display-4" style="color: var(--primary-color);">8 </span>
                 <span class="h4">Medicare Advantage offers the same protections as Original Medicare. </span>
                 <div class="ml-5 mt-1">
                   Even though Medicare Advantage plans are privately administered, you still
@@ -583,7 +699,7 @@
               </li>
               <hr>
               <li class=" ">
-                <span class="display-4" style="color: var(--primary);">9 </span>
+                <span class="display-4" style="color: var(--primary-color);">9 </span>
                 <span class="h4">Medicare Advantage has you covered. </span>
                 <div class="ml-5 mt-1">
                   Medicare Advantage plans must cover all the services that Original Medicare
@@ -594,7 +710,7 @@
               </li>
               <hr>
               <li class=" ">
-                <span class="display-4" style="color: var(--primary);">10 </span>
+                <span class="display-4" style="color: var(--primary-color);">10 </span>
                 <span class="h4">You have a built-in financial safety net. </span>
                 <div class="ml-5 mt-1">
                   Your plan’s annual out—of-pocket maximum is your safety net that ensures

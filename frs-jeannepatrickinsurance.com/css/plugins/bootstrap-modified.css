@@ -12,7 +12,8 @@
 
 :root {
   --blue-bs: #007bff;
-  --blue-custom: #3650a5;
+  /* --blue-custom: #3650a5; */
+  --blue-custom: navy;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
