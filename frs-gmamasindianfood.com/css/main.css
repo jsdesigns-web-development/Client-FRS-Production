@@ -411,6 +411,14 @@ h2, h3 {
     color: #3333ff;
 }
 
+#aboutfooter {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
 .history {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -432,6 +440,16 @@ h2, h3 {
     background-size: cover !important;
     top: -20%;
 }
+
+.background-image-holder-catering{
+   background: url(../images/catering.jpg) 50% 0% no-repeat;
+    width: 425px;
+    height: 100%;
+    z-index: 0;
+    background-size: cover !important;
+    top: -20%;
+}
+
 .divider-background {
     background-size: cover !important;
     overflow: hidden;
@@ -532,7 +550,7 @@ h2, h3 {
 }
 
 .menu-item-price {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     color: #ffff33;
 }
@@ -555,7 +573,7 @@ h2, h3 {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 #gallery {
-    padding-top: 50px;
+    /* padding-top: 50px; */
 }
 
 #gallery h2 {
@@ -799,6 +817,15 @@ figure.item:hover img {
     color: #ff33ff;
 }
 
+.a-link {
+    color: #ff33ff;
+}
+
+.a-link:hover {
+    color: #3333ff;
+    text-decoration: none;
+}
+
 .form-control:focus {
     border-color: #ff9933 !important;
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255,153,51,.6)
@@ -843,6 +870,21 @@ figure.item:hover img {
     float: left;
 }
 
+.contact-banner {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 20vh;
+  background: url(../images/contact-banner.jpg) no-repeat center;
+}
+
+.about-banner {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 55vh;
+  background: url(../images/contact-banner.jpg) no-repeat center;
+}
 /* Footer section
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -862,7 +904,7 @@ footer p {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media (max-width: 425px) {
   footer {
-    margin-top: 80% !important;
+    /* margin-top: 80% !important; */
   }
   .contact-details {
     margin-top: 1em !important;
@@ -871,7 +913,7 @@ footer p {
 
 @media (max-width: 768px) {
   footer {
-    margin-top: 50%;
+    /* margin-top: 50%; */
   }
   .contact-details {
     margin-top: 1em !important;
@@ -1172,7 +1214,7 @@ footer p {
 
 /* Footer Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     #indexfooter {
         margin-top: 15em !important;
     }
@@ -1182,7 +1224,7 @@ footer p {
     #indexfooter {
         margin-top: 16em !important;
     }
-}
+} */
 
 @media (max-width: 441px) {
     #eventsfooter {
