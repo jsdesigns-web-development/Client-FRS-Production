@@ -151,6 +151,9 @@ h2, h3 {
 .icon-cross:before {
   content: "\e00a";
 }
+.icon-yelp:before {
+  content: "\e00b";
+}
 
 /* Main Menu Section
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -330,6 +333,10 @@ h2, h3 {
 .social a:hover{
     background:none;
     color:#fff;
+}
+
+.social-icon-size {
+   font-size: .80em;
 }
 
 .close-btn {
@@ -885,6 +892,18 @@ figure.item:hover img {
   height: 55vh;
   background: url(../images/contact-banner.jpg) no-repeat center;
 }
+
+
+
+.contact-card-title {
+  margin-left: 1em;
+}
+/* .contact-card-details {
+margin-left: 1em;
+}
+.contact-card-spacing {
+
+} */
 /* Footer section
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
