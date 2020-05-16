@@ -89,7 +89,7 @@
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="./images/logo/favicon-16.png">
 
     <!-- Font Awesome
     __________________________________________________ -->
@@ -214,14 +214,18 @@
             <!-- Opening hours starts -->
             <div class="col-md-4">
                 <div class="opening-hours">
-                    <div class="frame">
+                    <div id="hours-frame" class="frame">
                         <h2>Hours</h2>
                         <ul class="list-unstyled">
                             <li>
                                 <p><em><smaller>Open 7 days</smaller></em></p>
                                 <p>11:00 AM - 7:30 PM</p>
                             </li>
-                            <li><p>&nbsp;</p></li>
+                            <li>
+                              <!-- <p>11:00 AM - 7:30 PM</p> -->
+                              <p>&nbsp;</p>
+                            </li>
+
                         </ul>
                     </div>
                 </div>
@@ -230,14 +234,14 @@
 
             <div class="col-md-4">
                 <div class="opening-hours">
-                    <div class="frame">
+                    <div id="orders-frame" class="frame">
                         <h2>Pickup Orders</h2>
                         <ul class="list-unstyled">
                           <li>
                               <p class="text-left">Phone: <a class="a-link" href="tel:19253231950">(925) 323-1950</a></p>
                           </li>
                           <li>
-                              <p class="text-left">Address: <a class="a-link" href="https://goo.gl/maps/i9ZDTEnckPrKmyAV9" target="_blank">480-A San Ramon Valley Blvd, Danville, CA</a></p>
+                              <p class="text-left">Address:<span style="display: block; padding-left: 0.75em;"><a class="a-link" href="https://goo.gl/maps/i9ZDTEnckPrKmyAV9" target="_blank">480-A San Ramon Valley Blvd, Danville, CA</a></span></p>
                           </li>
                         </ul>
                     </div>
@@ -247,17 +251,15 @@
 
             <div class="col-md-4">
                 <div class="opening-hours">
-                    <div class="frame">
+                    <div id="delivery-frame" class="frame">
                         <h2>Delivery</h2>
                         <ul class="list-unstyled">
                             <li>
-                                <p>Door Dash</p>
+                                <p style="color: darkgray">Door Dash (coming soon)</p>
                             </li>
                             <li>
-                                <p>GrubHub</p>
-                            </li>
-                            <li>
-                                <p></p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
                             </li>
                         </ul>
                     </div>
@@ -453,7 +455,7 @@
                                             <!-- <img src="images/item1.jpg" alt="" class="img-circle"> -->
                                         </div>
                                         <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">?</span>
+                                            <span class="menu-title">Pakoras</span>
                                             <span class="menu-descp">...ingredients...</span>
                                         </div>
                                         <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
@@ -468,7 +470,7 @@
                                             <!-- <img src="images/item2.jpg" alt="" class="img-circle"> -->
                                         </div>
                                         <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">?...s with beans</span>
+                                            <span class="menu-title">Samosas with beans</span>
                                             <span class="menu-descp">...ingredients...</span>
                                         </div>
                                         <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
@@ -483,7 +485,7 @@
                                             <!-- <img src="images/item3.jpg" alt="" class="img-circle"> -->
                                         </div>
                                         <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">?</span>
+                                            <span class="menu-title">Tikki</span>
                                             <span class="menu-descp">...ingredients...</span>
                                         </div>
                                         <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
@@ -498,7 +500,7 @@
                                             <!-- <img src="images/item4.jpg" alt="" class="img-circle"> -->
                                         </div>
                                         <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">?... with Dahi-Bhalla</span>
+                                            <span class="menu-title">Yogurt with Dahi-Bhalla</span>
                                             <span class="menu-descp">...ingredients...</span>
                                         </div>
                                         <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
@@ -519,7 +521,7 @@
                                             <!-- <img src="images/item1.jpg" alt="" class="img-circle"> -->
                                         </div>
                                         <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">?</span>
+                                            <span class="menu-title">Breads</span>
                                             <span class="menu-descp">...ingredients...</span>
                                         </div>
                                         <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
@@ -534,7 +536,7 @@
                                             <!-- <img src="images/item2.jpg" alt="" class="img-circle"> -->
                                         </div>
                                         <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">?... Roti</span>
+                                            <span class="menu-title">Indian Roti</span>
                                             <span class="menu-descp">...ingredients...</span>
                                         </div>
                                         <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
@@ -549,7 +551,7 @@
                                             <!-- <img src="images/item3.jpg" alt="" class="img-circle"> -->
                                         </div>
                                         <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">?... white Rice</span>
+                                            <span class="menu-title">Plain White Rice</span>
                                             <span class="menu-descp">...ingredients...</span>
                                         </div>
                                         <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
@@ -564,7 +566,7 @@
                                             <!-- <img src="images/item4.jpg" alt="" class="img-circle"> -->
                                         </div>
                                         <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">?</span>
+                                            <span class="menu-title">Naan</span>
                                             <span class="menu-descp">...ingredients...</span>
                                         </div>
                                         <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
@@ -579,7 +581,7 @@
                                             <!-- <img src="images/item5.jpg" alt="" class="img-circle"> -->
                                         </div>
                                         <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">?... Bread</span>
+                                            <span class="menu-title">Stuffed Bread</span>
                                             <span class="menu-descp">...ingredients...</span>
                                         </div>
                                         <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
@@ -594,7 +596,7 @@
                                             <!-- <img src="images/item1.jpg" alt="" class="img-circle"> -->
                                         </div>
                                         <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">?</span>
+                                            <span class="menu-title">Salad</span>
                                             <span class="menu-descp">...ingredients...</span>
                                         </div>
                                         <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
@@ -619,7 +621,7 @@
                                         </div>
                                         <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
                                             <span class="menu-item-price">
-                                                $ ?
+                                                $ 2.00
                                             </span>
                                         </div>
                                     </div>
@@ -634,7 +636,7 @@
                                         </div>
                                         <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
                                             <span class="menu-item-price">
-                                                $ ?
+                                                $ 6.00
                                             </span>
                                         </div>
                                     </div>
@@ -649,7 +651,7 @@
                                         </div>
                                         <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
                                             <span class="menu-item-price">
-                                                $ ?
+                                                $ 6.00
                                             </span>
                                         </div>
                                     </div>
@@ -835,7 +837,7 @@
     <script src="js/jquery-one-page-nav/jquery.nav.js"></script>
 
     <!-- Google Map -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script> -->
 
     <!-- Prasto plugins -->
     <script src="js/main.js"></script>
@@ -844,4 +846,25 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 
+<script type="text/javascript">
+  window.onload = function (){
+    var hours = $('#hours-frame');
+    var orders = $('#orders-frame');
+    var delivery = $('#delivery-frame');
+
+    // var maxFrameHeight = orders.clientHeight;
+    // hours.style.height = maxFrameHeight;
+
+    // delivery.style.height = orders.clientHeight;
+
+    // hours.style.height = "1000px";
+
+    console.log(hours.clientHeight);
+    console.log(orders.clientHeight);
+    console.log(delivery.clientHeight);
+
+    console.log($('.opening-hours').clientHeight);
+
+  }
+</script>
 </html>

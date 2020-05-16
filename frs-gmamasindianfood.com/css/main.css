@@ -471,7 +471,7 @@ h2, h3 {
 }
 
 #our-menu {
-    background: #161615 url(../images/barbeque-bg.jpg) no-repeat;
+    background: #161615; /*url(../images/barbeque-bg.jpg) no-repeat;*/
     padding: 50px 0;
     color: #fff;
     -webkit-background-size: cover;
@@ -710,6 +710,10 @@ figure.item:hover img {
     font-size: 40px;
     border-bottom: #fff 1px solid;
     margin-bottom: 20px;
+}
+
+.frame {
+  height: 302px;
 }
 
 .opening-hours .frame {
@@ -960,9 +964,12 @@ footer p {
 }
 
 @media only screen and (max-width: 990px)  {
-   .history{
-   min-height: 100%;
+   .history {
+     min-height: 100%;
     }
+  /* .contact-details {
+    max-width: 100px;
+  } */
 }
 
 @media only screen and (max-width: 349px)  {

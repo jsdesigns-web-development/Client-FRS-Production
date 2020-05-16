@@ -6,11 +6,13 @@
 (function ($) {
 	var pushy = $('.pushy'), //menu css class
 		body = $('body'),
+		footer = $('footer'),
 		container = $('#container'), //container css class
 		push = $('.push'), //css class to add pushy capability
 		pushyLeft = 'pushy-left', //css class for left menu position
 		pushyOpenLeft = 'pushy-open-left', //css class when menu is open (left position)
 		pushyOpenRight = 'pushy-open-right', //css class when menu is open (right position)
+		pushyDrop = 'pushy-drop-down', //css class when overlay raises footer
 		siteOverlay = $('.site-overlay'), //site overlay
 		menuBtn = $('.menu-btn, .pushy-link'), //css classes to toggle the menu
 		menuSpeed = 200, //jQuery fallback menu speed
@@ -24,22 +26,30 @@
 		//add class to body based on menu position
 		if( pushy.hasClass(pushyLeft) ){
 			body.toggleClass(pushyOpenLeft);
+			setTimeout(function(){
+				footer.toggleClass(pushyDrop);
+			}, 500);
 		}else{
 			body.toggleClass(pushyOpenRight);
+			setTimeout(function(){
+				footer.toggleClass(pushyDrop);
+			}, 500);
 		}
 	}
 
-	function openPushyFallback(){		
+	function openPushyFallback(){
 
 		//animate menu position based on CSS class
 		if( pushy.hasClass(pushyLeft) ){
 			body.addClass(pushyOpenLeft);
+			footer.addClass(pushyDrop)
 			pushy.animate({left: "0px"}, menuSpeed);
 			container.animate({left: menuWidth}, menuSpeed);
 			//css class to add pushy capability
 			push.animate({left: menuWidth}, menuSpeed);
 		}else{
 			body.addClass(pushyOpenRight);
+			footer.addClass(pushyDrop)
 			pushy.animate({right: '0px'}, menuSpeed);
 			container.animate({right: menuWidth}, menuSpeed);
 			push.animate({right: menuWidth}, menuSpeed);
@@ -52,12 +62,14 @@
 		//animate menu position based on CSS class
 		if( pushy.hasClass(pushyLeft) ){
 			body.removeClass(pushyOpenLeft);
+			footer.removeClass(pushyDrop)
 			pushy.animate({left: "-" + menuWidth}, menuSpeed);
 			container.animate({left: "0px"}, menuSpeed);
 			//css class to add pushy capability
 			push.animate({left: "0px"}, menuSpeed);
 		}else{
 			body.removeClass(pushyOpenRight);
+			footer.removeClass(pushyDrop)
 			pushy.animate({right: "-" + menuWidth}, menuSpeed);
 			container.animate({right: "0px"}, menuSpeed);
 			push.animate({right: "0px"}, menuSpeed);
@@ -83,11 +95,11 @@
 	        }
 	    });
 	}
-	
+
     function toggleSubmenuFallback(){
     	//hide submenu by default
     	$(submenuClass).addClass(submenuClosedClass);
-    	
+
     	submenu.children('a').on('click', function(event){
     		event.preventDefault();
     		$(this).toggleClass(submenuOpenClass)
@@ -135,6 +147,7 @@
 
 		//toggle menu
 		menuBtn.on('click', function(){
+
 			togglePushy();
 		});
 		//close menu when clicking site overlay
@@ -153,7 +166,7 @@
 		}
 
 		//make menu visible
-		pushy.css({'visibility': 'visible'}); 
+		pushy.css({'visibility': 'visible'});
 		//fixes IE scrollbar issue
 		container.css({"overflow-x": "hidden"});
 

@@ -63,6 +63,7 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
     <!-- Bootstrap (Framework) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.css">
 
@@ -89,14 +90,44 @@
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="./images/logo/favicon-16.png">
+
+    <!-- Font Awesome
+    __________________________________________________ -->
+    <script src="https://kit.fontawesome.com/13f10d6a10.js" crossorigin="anonymous"></script>
 
     <!--[if lt IE 9]>
         <script src="js/vendor/html5-3.6-respond-1.4.2.min.js"></script>
     <![endif]-->
+
+<style>
+  .contact-font {
+    font-weight: bold;
+    font-family: 'Roboto', "Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+
+  #contact {
+    padding-top: 2em;
+  }
+
+  #contact-card-col {
+    padding-top: 2.7em;
+  }
+
+  @media (max-width: 991px){
+    #contact {
+      padding-top: 2em;
+    }
+
+    #contact-card-col {
+      padding-top: 0em;
+    }
+  }
+
+</style>
 </head>
 
-<body>
+<body class="border">
 
     <!-- Preloader
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -123,11 +154,12 @@
                 <li class="pushy-link"><a href="contact.html">Contact</a></li>
             </ul>
 
-            <div class="social clearfix">
-                <!--a href=""><i class="icon icon-facebook"></i></a>
-                <a href=""><i class="icon icon-twitter"></i></a>
-                <a href=""><i class="icon icon-google-plus"></i></a>
-                <a href=""><i class="icon icon-instagram"></i></a-->
+            <div class="social clearfix text-center">
+                <a href=""><i class="fab fa-yelp social-icon-size"></i></a>
+                <a href=""><i class="fab fa-google social-icon-size"></i></a>
+                <a href=""><i class="fab fa-facebook-square social-icon-size"></i></a>
+                <a href=""><i class="fab fa-instagram social-icon-size"></i></a>
+                <!-- <a href=""><i class="fab fa-twitter social-icon-size"></i></a> -->
             </div>
         </nav>
     </div> <!-- Off canvas menu ends -->
@@ -146,8 +178,63 @@
       <section id="contact">
 
           <div class="container">
-              <div class="row row-cols-2">
-                <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-lg-6 col-xl-6 mb-5" id="contact-card-col">
+                  <div class="shadow pt-2 pl-5 pb-4 rounded mt-4">
+                    <h2>Contact</h2>
+                    <p>
+                      Call today to place an order or schedule your next event!
+                    </p>
+                    <div class="font-weight-bold">
+                      Phone:
+                    </div>
+                    <div class="pb-4 pl-3">
+                      <a class="a-link" href="tel:19253231950">(925) 323-1950</a>
+                    </div>
+                    <div class="font-weight-bold">
+                      Address:
+                    </div>
+                    <div class="pb-4 pl-3">
+                      <a class="a-link" href="https://goo.gl/maps/i9ZDTEnckPrKmyAV9" target="_blank">480 San Ramon Valley Blvd, Unit A, Danville, CA</a>
+                    </div>
+                    <div class="font-weight-bold">
+                      Email:
+                    </div>
+                    <div class="pb-4 pl-3 text-monospace">
+                      <a class="a-link" href="mailto:info@gmamasindianfood.com">info@gmamasindianfood.com</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-sm-12 col-lg-6 col-xl-6" style="padding-top: 2em; padding-bottom: 2em; margin-bottom: 8em;">
+                <form method="POST" action="https://formspree.io/mkzglljx">
+                  <div class="form-group">
+                    <label for="name">Name<span style="color: #ff9933;"> *</span></label>
+                    <input type="text" class="form-control" name="name" placeholder="First & Last Name" required>
+
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email<span style="color: #ff9933;"> *</span></label>
+                    <input type="text" class="form-control" name="_replyto" placeholder="info@example.com" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" class="form-control" name="phone" placeholder="(555) 555-5555"/>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="message">Message<span style="color:#ff9933;"> *</span></label>
+                    <textarea type="text" class="form-control" name="message" placeholder="" rows="5" cols="80" required></textarea>
+                  </div>
+                  <input type="hidden" name="_subject" value="[ gmamasindianfood.com ] You have a new message!" />
+                  <input type="hidden" name="_next" value="https://www.gmamasindianfood.com"/>
+                  <input type="text" name="_gotcha" style="display:none" />
+                  <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+              </div>
+            </div>
+              <!-- <div class="row row-cols-2 border">
+                <div class="col col-md-6 col-lg-6 col-sm-6 contact-font">
                   <div class="contact-details shadow">
                     <h2>Contact</h2>
                     <p>
@@ -155,7 +242,7 @@
                     </p>
                     <div class="row justify-content-start border">
 
-                        <div class="col col-md-3 contact-card-title border">
+                        <div class="col col-md-3 contact-card-title border" style="margin-left: 0; padding-left: 0; font-size: 16px;">
                           Phone:
                         </div>
                         <div class="col contact-card-details contact-phone border">
@@ -165,7 +252,7 @@
                     </div>
                     <div class="row justify-content-start border">
 
-                        <div class="col col-md-3 contact-card-title border">
+                        <div class="col col-md-3 contact-card-title border" style="margin-left: 0; padding-left: 0; margin-left: 0; font-size: 16px;">
                           Address:
                         </div>
                         <div class="col contact-card-details contact-address border">
@@ -175,7 +262,7 @@
                     </div>
                     <div class="row justify-content-start border">
 
-                        <div class="col col-md-3 col-sm-3 col-3 col-lg-3 contact-card-title border">
+                        <div class="col col-md-3 col-sm-3 col-3 col-lg-3 contact-card-title border" style="margin-left: 0; padding-left: 0; margin-left: 0; font-size: 16px;">
                           Email:
                         </div>
                         <div class="col contact-card-details contact-email border">
@@ -216,9 +303,7 @@
                   </div>
                 </div>
 
-              </div>
-
-
+              </div> -->
 
           </div>
       </section> <!-- Contact section ends -->
@@ -275,7 +360,7 @@
         <!-- Contact section ends -->
 
         <!-- Footer starts -->
-        <footer id="aboutfooter">
+        <footer id="aboutfooter" class="pushy-raise-up">
             <div class="container">
                 <p>
                   &copy;
@@ -335,7 +420,7 @@
     <script src="js/jquery-one-page-nav/jquery.nav.js"></script>
 
     <!-- Google Map -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script> -->
 
     <!-- Prasto plugins -->
     <script src="js/main.js"></script>
