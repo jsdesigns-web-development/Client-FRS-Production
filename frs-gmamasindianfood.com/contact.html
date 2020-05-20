@@ -5,16 +5,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124296218-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-124296218-2');
-    </script>
-
-
     <title>G-Mama's Halal Indian Food Restaurant - Contact Us</title>
     <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64 128x128" href="./images/logo/favicon.ico" />
     <link rel="icon" type="image/x-icon" href="./images/logo/favicon.ico">
@@ -174,10 +164,14 @@
         <img src="images/contact-banner.jpg" alt="" style="display: none;">
       </div>
 
+      <div id="confirmation" class="alert alert-success alert-dismissible mt-3 mb-0 mx-3 text-center" role="alert" style="display: none;">
+        <button type="button" class="close pb-0 pt-1" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>Message Sent!</strong> We'll get back to you shortly.
+      </div>
       <!-- Contact section starts -->
       <section id="contact">
 
-          <div class="container">
+          <div class="container mb-5 pb-5">
             <div class="row">
               <div class="col-md-12 col-sm-12 col-lg-6 col-xl-6 mb-5" id="contact-card-col">
                   <div class="shadow pt-2 pl-5 pb-4 rounded mt-4">
@@ -227,7 +221,7 @@
                     <textarea type="text" class="form-control" name="message" placeholder="" rows="5" cols="80" required></textarea>
                   </div>
                   <input type="hidden" name="_subject" value="[ gmamasindianfood.com ] You have a new message!" />
-                  <input type="hidden" name="_next" value="https://www.gmamasindianfood.com"/>
+                  <input type="hidden" name="_next" value="https://gmamasindianfood.com/?thankyou=true"/>
                   <input type="text" name="_gotcha" style="display:none" />
                   <button type="submit" class="btn btn-primary">Send</button>
                 </form>
@@ -306,6 +300,27 @@
 
     <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script>
+  function displayConfirmation(){
+    document.getElementById('confirmation').style.display = "block";
+  }
+
+  var url = window.location.href;
+
+  var paramStr = url.split("?")[1];
+
+  if(paramStr){
+    var paramArr = paramStr.split("=");
+
+    var paramObj = {};
+    paramObj[paramArr[0]] = paramArr[1];
+
+    if(paramObj.thankyou){
+      displayConfirmation();
+    }
+  }
+</script>
+
 </body>
 
 </html>
