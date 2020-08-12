@@ -716,6 +716,24 @@ figure.item:hover img {
   height: 302px;
 }
 
+@media (min-width: 1200px) {
+  .frame {
+    height: 432px;
+  }
+}
+
+@media (max-width: 337px){
+  .frame-address {
+    height: 402px;
+  }
+}
+
+@media (max-width: 269px){
+  .frame-address {
+    height: 502px;
+  }
+}
+
 .opening-hours .frame {
     border: #fff 2px solid;
     margin-bottom: 0;
